@@ -1,0 +1,27 @@
+{
+  "name": "pwa-budged-tracker",
+  "version": "1.0.0",
+  "description": "budget tracker - PWA",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ianasqazi/PWA-Budged-Tracker.git"
+  },
+  "keywords": [
+    "progressive",
+    "web",
+    "application",
+    "budget",
+    "tracker",
+    "offline"
+  ],
+  "author": "ianasqazi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ianasqazi/PWA-Budged-Tracker/issues"
+  },
+  "homepage": "https://github.com/ianasqazi/PWA-Budged-Tracker#readme"
+}
