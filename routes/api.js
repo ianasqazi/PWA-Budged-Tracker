@@ -3,13 +3,6 @@ const Transaction = require("../models/transaction.js");
 
 router.get("/", (req, res) => {
   console.log("HELLLO WORLD !!!")
-  Transaction.find({}).sort({date: -1})
-    .then(dbTransaction => {
-      res.json(dbTransaction);
-    })
-    .catch(err => {
-      res.status(404).json(err);
-    });
 });
 
 router.post("/api/transaction", ({body}, res) => {
