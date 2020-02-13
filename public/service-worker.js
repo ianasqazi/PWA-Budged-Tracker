@@ -8,6 +8,7 @@ var FILES_TO_CACHE = [
   '/icons/icon-512x512.png',
   '/manifest.json',
   '/db.js',
+  './favicon.ico'
   
   // '/models/transaction.js',
   // '/../models/transaction.js'
