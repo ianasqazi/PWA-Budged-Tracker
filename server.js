@@ -17,8 +17,10 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.use(express.static("public"));
+// mongoose.connect('mongodb://pwa:pwapwa1@dds217350.mlab.com:17350/heroku_0w2zzvw1', 
+// mongodb://<dbuser>:<dbpassword>@ds217350.mlab.com:17350/heroku_0w2zzvw1
 
-mongoose.connect("mongodb://localhost/budget", {
+mongoose.connect("mongodb://pwa:pwapwa1@dds217350.mlab.com:17350/heroku_0w2zzvw1", {
   useNewUrlParser: true,
   useFindAndModify: false
 });
