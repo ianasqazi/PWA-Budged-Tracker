@@ -20,10 +20,25 @@ app.use(express.static("public"));
 // mongoose.connect('mongodb://pwa:pwapwa1@dds217350.mlab.com:17350/heroku_0w2zzvw1', 
 // mongodb://<dbuser>:<dbpassword>@ds217350.mlab.com:17350/heroku_0w2zzvw1
 
-mongoose.connect("mongodb://pwa:pwapwa1@dds217350.mlab.com:17350/heroku_0w2zzvw1", {
+// mongoose.connect("mongodb://pwa:pwapwa1@dds217350.mlab.com:17350/heroku_0w2zzvw1", {
+//   useNewUrlParser: true,
+//   useFindAndModify: false,
+//     useUnifiedTopology: true
+// });
+
+mongoose.connect('mongodb://pwa:pwapwa1@dds217350.mlab.com:17350/heroku_0w2zzvw1', {
+
   useNewUrlParser: true,
   useFindAndModify: false
 });
+
+// mongoose.connect('mongodb://pwa:pwapwa1@dds217350.mlab.com:17350/heroku_0w2zzvw1', function(err, db) {
+//     if (err) {
+//         console.log('Unable to connect to the server. Please start the server. Error:', err);
+//     } else {
+//         console.log('Connected to Server successfully!');
+//     }
+// });
 
 // routes
 app.use(require("./routes/api.js"));
