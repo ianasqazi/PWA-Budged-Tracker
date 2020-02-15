@@ -19,6 +19,7 @@ app.use(express.json());
 app.use(express.static("public"));
 // mongoose.connect('mongodb://pwa:pwapwa1@dds217350.mlab.com:17350/heroku_0w2zzvw1', 
 // mongodb://<dbuser>:<dbpassword>@ds217350.mlab.com:17350/heroku_0w2zzvw1
+// mongodb://<dbuser>:<dbpassword>@ds219308.mlab.com:19308/heroku_9738h7dp
 
 // mongoose.connect("mongodb://pwa:pwapwa1@dds217350.mlab.com:17350/heroku_0w2zzvw1", {
 //   useNewUrlParser: true,
@@ -26,7 +27,7 @@ app.use(express.static("public"));
 //     useUnifiedTopology: true
 // });
 
-mongoose.connect('mongodb://pwa:pwapwa1@dds217350.mlab.com:17350/heroku_0w2zzvw1', {
+mongoose.connect('mongodb://username:password1@dds217350.mlab.com:17350/heroku_0w2zzvw1', {
 
   useNewUrlParser: true,
   useFindAndModify: false
