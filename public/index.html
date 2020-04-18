@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,43 +8,73 @@
   <meta name="theme-color" content="#317EFB">
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
   <link rel="stylesheet" href="styles.css">
 
   <link rel="manifest" href="/manifest.json">
 
   <title>Budget Tracker</title>
 </head>
-<body>
-  <div class="wrapper">
-    <div class="total">
-      <div class="total">Your total is: $<span id="total">0</span></div>
-    </div>
 
-    <div class="form">
+<body>
+  <div class="jumbotron jumbotron-fluid">
+    <h1 class="display-4 d-flex justify-content-center">PROGRESSIVE WEB APP - BUDGET TRACKER</h1>
+  </div>
+
+  <div class="row">
+    <div class="col total d-flex justify-content-center">
+      Your total is: $<span id="total">0</span>
+
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col form d-flex justify-content-center">
       <input type="text" id="t-name" placeholder="Name of transaction" />
       <input type="number" min="0" id="t-amount" placeholder="Transaction amount" />
       <button id="add-btn"><i class="fa fa-plus buttons"></i> Add Funds</button>
       <button id="sub-btn"><i class="fa fa-minus"></i> Subtract Funds</button>
       <p class="error"></p>
-    </div>
 
-    <div class="transactions">
+    </div>
+  </div>
+
+
+  <div class="row">
+
+    <div class="col-6 transactions">
       <table>
         <thead>
           <th>Transaction</th>
           <th>Amount</th>
         </thead>
         <tbody id="tbody">
-          
+
         </tbody>
       </table>
     </div>
-    
-    <canvas id="myChart"></canvas>
+
+    <div class="col-6">
+      <canvas id="myChart"></canvas>
+
+    </div>
+
+  </div>
+  <div class="wrapper">
+
+    <div class="transactions">
+
+
+    </div>
+
+
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
   <script src="db.js"></script>
   <script src="index.js"></script>
 </body>
+
 </html>
