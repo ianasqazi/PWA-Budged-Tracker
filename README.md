@@ -20,7 +20,7 @@ Click the link below to check the repository :
 
 ## Preview
 
-![HOME_PAGE](/screenshots/pwaBudget.png)
+![PREVIEW](/screenshot/pwaBudget.png)
 
 ## Requirements
 
