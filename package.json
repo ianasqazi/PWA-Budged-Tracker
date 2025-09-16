@@ -27,10 +27,10 @@
   "homepage": "https://github.com/ianasqazi/PWA-Budged-Tracker#readme",
   "dependencies": {
     "compression": "^1.7.4",
-    "express": "^4.17.1",
-    "lite-server": "^2.5.4",
-    "mongodb": "^3.5.3",
-    "mongoose": "^5.8.11",
-    "morgan": "^1.9.1"
+    "express": "^4.19.2",
+    "lite-server": "^2.6.1",
+    "mongodb": "^4.8.1",
+    "mongoose": "^8.18.1",
+    "morgan": "^1.10.0"
   }
 }
